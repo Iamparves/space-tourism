@@ -9,7 +9,8 @@ export default {
       },
       fontFamily: {
         bellefair: ["Bellefair", "sans-serif"],
-        barlow: ["Barlow Condensed", "sans-serif"],
+        barlow: ["Barlow", "sans-serif"],
+        "barlow-condensed": ["Barlow Condensed", "sans-serif"],
       },
     },
   },
