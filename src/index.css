@@ -4,38 +4,38 @@
 
 @layer utilities {
   .heading-1 {
-    @apply text-[150px];
+    @apply text-[150px] uppercase text-white;
   }
 
   .heading-2 {
-    @apply text-[100px];
+    @apply text-[100px] uppercase text-white;
   }
 
   .heading-3 {
-    @apply text-[56px];
+    @apply text-[56px] uppercase text-white;
   }
 
   .heading-4 {
-    @apply text-[32px];
+    @apply text-[32px] uppercase text-white;
   }
 
   .heading-5 {
-    @apply font-barlow text-[28px] tracking-[4.75px];
+    @apply font-barlow text-[28px] uppercase tracking-[4.75px] text-white;
   }
 
   .subheading-1 {
-    @apply text-[28px];
+    @apply text-[28px] uppercase text-white;
   }
 
   .subheading-2 {
-    @apply text-[14px] tracking-[2.35px];
+    @apply font-barlow text-[14px] uppercase tracking-[2.35px] text-white;
   }
 
   .nav-text {
-    @apply text-[16px] tracking-[2.7px];
+    @apply font-barlow text-[16px] uppercase tracking-[2.7px] text-white md:text-[14px] lg:text-[16px];
   }
 
   .body-text {
-    @apply text-[18px];
+    @apply font-barlow text-[18px] text-white;
   }
 }
