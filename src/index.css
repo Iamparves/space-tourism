@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .heading-1 {
+    @apply text-[150px];
+  }
+
+  .heading-2 {
+    @apply text-[100px];
+  }
+
+  .heading-3 {
+    @apply text-[56px];
+  }
+
+  .heading-4 {
+    @apply text-[32px];
+  }
+
+  .heading-5 {
+    @apply font-barlow text-[28px] tracking-[4.75px];
+  }
+
+  .subheading-1 {
+    @apply text-[28px];
+  }
+
+  .subheading-2 {
+    @apply text-[14px] tracking-[2.35px];
+  }
+
+  .nav-text {
+    @apply text-[16px] tracking-[2.7px];
+  }
+
+  .body-text {
+    @apply text-[18px];
+  }
+}
