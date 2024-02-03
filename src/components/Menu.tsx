@@ -23,7 +23,7 @@ const Menu = () => {
           isOpen ? "active" : "",
         )}
       >
-        <div className="relative flex h-full flex-col gap-8 px-7 py-8 pl-8 md:flex-row md:items-center md:gap-9 md:px-12 md:py-0 lg:gap-12">
+        <div className="relative flex h-full flex-col gap-8 px-7 py-8 pl-8 md:flex-row md:items-center md:gap-9 md:px-12 md:py-0 lg:gap-12 lg:pl-24 xl:pl-[124px] xl:pr-[104px]">
           <div className="flex justify-end pb-8 md:hidden">
             <button onClick={() => setIsOpen(false)}>
               <img src="/icon-close.svg" alt="Menu Close Icon" />
@@ -39,6 +39,7 @@ const Menu = () => {
           ))}
           <div className="absolute left-0 top-0 z-[-1] h-full w-[100vw] bg-[#ffffff0a] backdrop-blur-[82px]"></div>
         </div>
+        <div className="absolute left-8 top-1/2 hidden h-[1px] w-[28vw] max-w-[475px] -translate-x-full bg-[#ffffff47] xl:block"></div>
       </div>
     </>
   );
