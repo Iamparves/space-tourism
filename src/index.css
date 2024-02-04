@@ -8,7 +8,7 @@
   }
 
   .heading-2 {
-    @apply text-[100px] uppercase;
+    @apply text-[56px] uppercase md:text-[80px] lg:text-[100px];
   }
 
   .heading-3 {
@@ -28,7 +28,7 @@
   }
 
   .subheading-2 {
-    @apply font-barlow-condensed text-[14px] uppercase tracking-[2.35px];
+    @apply font-barlow-condensed text-[14px] uppercase tracking-[2.36px];
   }
 
   .nav-text {
