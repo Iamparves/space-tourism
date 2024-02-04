@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <main className="grid min-h-dvh grid-cols-1 bg-[url(/home/background-home-mobile.jpg)] bg-cover bg-center bg-no-repeat md:bg-[url(/home/background-home-tablet.jpg)] lg:bg-[url(/home/background-home-desktop.jpg)]">
       <NavbarSpace />
-      <div className="mx-auto flex h-full w-full max-w-[1110px] flex-wrap items-end justify-between pb-28">
-        <div className="max-w-md">
+      <div className="mx-auto flex h-full w-full max-w-[1110px] flex-col items-center justify-between gap-20 px-6 py-8 md:gap-32 md:pb-20 md:pt-24 lg:flex-row xl:px-0">
+        <div className="max-w-sm text-center md:max-w-md lg:text-left">
           <h5 className="heading-5 text-secondary">
             So, you want to travel to
           </h5>
@@ -18,10 +18,10 @@ const Home = () => {
             world experience!
           </p>
         </div>
-        <div className="">
+        <div>
           <Link
             to="/destination"
-            className="heading-4 flex size-[274px] items-center justify-center rounded-full bg-white text-primary duration-300 hover:shadow-[0_0_0_88px_#ffffff19]"
+            className="flex size-[150px] items-center justify-center rounded-full bg-white text-xl uppercase tracking-[1.25px] text-primary duration-300 md:size-[242px] md:text-[32px] md:tracking-[2px] lg:size-[274px] lg:hover:shadow-[0_0_0_40px_#ffffff19] xl:hover:shadow-[0_0_0_88px_#ffffff19]"
           >
             Explore
           </Link>

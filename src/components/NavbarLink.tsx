@@ -4,13 +4,20 @@ interface NavbarLinkProps {
   index: number;
   name: string;
   path: string;
+  closeMenu?: () => void;
 }
 
-const NavbarLink: React.FC<NavbarLinkProps> = ({ index, name, path }) => {
+const NavbarLink: React.FC<NavbarLinkProps> = ({
+  index,
+  name,
+  path,
+  closeMenu,
+}) => {
   return (
     <NavLink
       className="nav-text group relative flex items-center gap-3 overflow-hidden uppercase text-white md:py-10"
       to={path}
+      onClick={closeMenu}
     >
       <span className="font-bold md:hidden lg:block">0{index}</span>
       <span>{name}</span>
