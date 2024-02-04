@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <main className="grid min-h-dvh grid-cols-1 bg-[url(/home/background-home-mobile.jpg)] bg-cover bg-center bg-no-repeat md:bg-[url(/home/background-home-tablet.jpg)] lg:bg-[url(/home/background-home-desktop.jpg)]">
       <NavbarSpace />
-      <div className="mx-auto flex h-full w-full max-w-[1110px] items-end justify-between pb-28">
+      <div className="mx-auto flex h-full w-full max-w-[1110px] flex-wrap items-end justify-between pb-28">
         <div className="max-w-md">
           <h5 className="heading-5 text-secondary">
             So, you want to travel to

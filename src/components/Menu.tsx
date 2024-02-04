@@ -9,7 +9,7 @@ const menuItems = [
   { name: "Technology", path: "/technology" },
 ];
 
-const Menu = () => {
+const Menu = ({ scrolled }: { scrolled: boolean }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -37,7 +37,12 @@ const Menu = () => {
               path={item.path}
             />
           ))}
-          <div className="absolute left-0 top-0 z-[-1] h-full w-[100vw] bg-[#ffffff0a] backdrop-blur-[82px]"></div>
+          <div
+            className={twMerge(
+              "absolute left-0 top-0 z-[-1] h-full w-[100vw] bg-[#ffffff0a] backdrop-blur-[82px] duration-300",
+              scrolled && "md:opacity-0",
+            )}
+          ></div>
         </div>
         <div className="absolute left-8 top-1/2 hidden h-[1px] w-[28vw] max-w-[475px] -translate-x-full bg-[#ffffff47] xl:block"></div>
       </div>
