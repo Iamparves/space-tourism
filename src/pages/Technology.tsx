@@ -14,7 +14,7 @@ const Technology = () => {
       exit={{
         opacity: 0,
         transition: {
-          delay: 1.3,
+          delay: 1.2,
           duration: 0.2,
         },
       }}

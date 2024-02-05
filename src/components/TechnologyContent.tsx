@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { getTechnologies } from "../utils/getData";
 import TechnologyTabs from "./TechnologyTabs";
@@ -17,27 +18,54 @@ const TechnologyContent = () => {
             totalTechnologies={technologies.length}
           />
           <div className="w-full max-w-[325px] text-center md:max-w-[440px] lg:max-w-none lg:text-left">
-            <p className="subheading-3 mb-1 text-secondary md:mb-2">
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.3, delay: 0.5 }}
+              className="subheading-3 mb-1 text-secondary md:mb-2"
+              key={`terminology-${technologyIndex}`}
+            >
               The Terminology...
-            </p>
-            <h3 className="heading-3 mb-3 leading-tight md:mb-2">
+            </motion.p>
+            <motion.h3
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.3, delay: 0.6 }}
+              className="heading-3 mb-3 leading-tight md:mb-2"
+              key={technology.name}
+            >
               {technology.name}
-            </h3>
-            <p className="body-text text-secondary lg:max-w-[445px] lg:leading-[1.7]">
+            </motion.h3>
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.3, delay: 0.7 }}
+              className="body-text text-secondary lg:max-w-[445px] lg:leading-[1.7]"
+              key={`description-${technologyIndex}`}
+            >
               {technology.description}
-            </p>
+            </motion.p>
           </div>
         </div>
-        <div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
+          key={`image-${technologyIndex}`}
+        >
           <img
             className="w-full lg:hidden"
             src={`/technology/${technology.images.landscape}`}
           />
           <img
-            className="hidden lg:block"
+            className="hidden w-full lg:block"
             src={`/technology/${technology.images.portrait}`}
           />
-        </div>
+        </motion.div>
       </div>
     )
   );
