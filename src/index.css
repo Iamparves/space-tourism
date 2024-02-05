@@ -27,8 +27,13 @@
     @apply text-[28px] uppercase;
   }
 
-  .subheading-2 {
+  .subheading-2,
+  .subheading-3 {
     @apply font-barlow-condensed text-[14px] uppercase tracking-[2.36px];
+  }
+
+  .subheading-3 {
+    @apply md:text-[16px] md:tracking-[2.7];
   }
 
   .nav-text {

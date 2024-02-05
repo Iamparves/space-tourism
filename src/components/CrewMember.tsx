@@ -9,7 +9,7 @@ interface CrewMemberProps {
 
 const CrewMember: React.FC<CrewMemberProps> = ({ crew, children }) => {
   return (
-    <div className="mx-auto w-full max-w-[1136px] px-6 md:px-10 lg:mt-10 xl:px-0">
+    <div className="mx-auto w-full max-w-[1136px] px-6 md:mt-10 md:px-10 xl:px-0">
       <motion.h5
         initial={{ opacity: 0, y: "100%" }}
         animate={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ const CrewMember: React.FC<CrewMemberProps> = ({ crew, children }) => {
         className="heading-5 flex justify-center gap-4 md:justify-start"
         key={`crew-${crew.name}`}
       >
-        <span className="font-bold opacity-25">01</span>
+        <span className="font-bold opacity-25">02</span>
         Meet Your Crew
       </motion.h5>
       <div className="mx-auto mt-8 flex max-w-[330px] flex-col-reverse gap-8 md:mt-[60px] md:max-w-[460px] md:flex-col md:gap-10 lg:-mt-10 lg:max-w-none lg:flex-row lg:items-center lg:justify-between">
