@@ -12,11 +12,11 @@
   }
 
   .heading-3 {
-    @apply text-[56px] uppercase;
+    @apply text-[24px] uppercase md:text-[40px] lg:text-[50px] xl:text-[56px];
   }
 
   .heading-4 {
-    @apply text-[32px] uppercase;
+    @apply text-[16px] uppercase md:text-[24px] lg:text-[32px];
   }
 
   .heading-5 {
