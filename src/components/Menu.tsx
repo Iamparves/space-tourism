@@ -45,12 +45,6 @@ const Menu = ({ scrolled }: { scrolled: boolean }) => {
             )}
           ></div>
         </div>
-        <div
-          className={twMerge(
-            "absolute left-8 top-1/2 hidden h-[1px] w-[28vw] max-w-[475px] -translate-x-full bg-[#ffffff47] duration-100 xl:block",
-            scrolled && "opacity-0",
-          )}
-        ></div>
       </div>
     </>
   );

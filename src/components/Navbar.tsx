@@ -31,6 +31,12 @@ const Navbar = () => {
             className="size-10 md:size-12"
           />
         </Link>
+        <hr
+          className={twMerge(
+            "z-[999] -mr-8 ml-10 hidden flex-grow border-[#ffffff47] lg:block xl:ml-16",
+            scrolled && "opacity-0",
+          )}
+        />
         <Menu scrolled={scrolled} />
       </div>
       <div
